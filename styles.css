@@ -1,0 +1,44 @@
+body {
+	background-color: black;
+}
+
+div {
+	position: absolute;
+	left: 130px;
+	top: 20px;
+}
+
+/* GLOBAL STYLES */
+body {
+	background: #000;
+	padding-top: 5em;
+	display: flex;
+	justify-content: center;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+	width: 0%;
+	color: #fff;
+	font-family: monospace;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: typing 1550ms steps(30, end), blink-caret .5s step-end infinite;
+	animation-fill-mode: forwards;
+	animation-delay: 2350ms;
+	position: relative;
+	left: 400px;
+	top: 350px;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}
